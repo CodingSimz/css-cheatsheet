@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Pseudo-Class Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Simone Waring">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>CSS Pseudo-Class Reference</h1>
+    <p>Pseudo classes are used for an elements state. Whilst they have a variety of uses, the most common is to style the states of links a.k.a the anchor tag.</p>
+    <h2>Anchor Pseudo-Class</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Selector</th>
+          <th>Description</th>
+          <th>Example Ruleset</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>a:link</code></td>
+          <td>styles unvisited link</td>
+          <td><pre>a:link {
+  color: plum;
+}</pre></td>
+        </tr>
+        <tr>
+          <td><code>a:visited</code></td>
+          <td>styles visited link</td>
+          <td><pre>a:visited {
+  color: deepskyblue;
+}</pre></td>
+        </tr>
+        <tr>
+          <td><code>a:hover</code></td>
+          <td>styles mouse over link</td>
+          <td><pre>a:hover {
+  color: orchid;
+}</pre></td>
+        </tr>
+        <tr>
+          <td><code>a:active</code></td>
+          <td>styles selected link</td>
+          <td><pre>a:active {
+  color: skyblue;
+}</pre></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><a href='#'>Play with this example</a></p>
+    <p>Pseudo Classes have a range of great uses especially for tables and forms. Take a look below for a small sample of what they can do.</p>
+    <table class="samples">
+      <thead>
+        <tr>
+          <th>Selector</th>
+          <th>Description</th>
+          <th>Example Ruleset</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>:first-child</code></td>
+          <td>styles first child of it's parent element (like this table's first td)</td>
+          <td><pre>td:first-child {
+  background-color: yellow;
+}</pre></td>
+        </tr>
+        <tr>
+          <td><code>::first-letter</code></td>
+          <td>styles first letter of block a level selector (like this)</td>
+          <td><pre>td::first-letter {
+  color: darkorchid;
+}</pre></td>
+        </tr>
+        <tr>
+          <td><code>:last-of-type</code></td>
+          <td>styles last element of any type (see the last paragraph on this page) </td>
+          <td><pre>p:last-of-type {
+  color: darkorchid;
+}</pre></td>
+        </tr>
+        <tr>
+          <td><code>::selection</code></td>
+          <td>styles User's selection (try selecting text in a paragraph above)</td>
+          <td><pre>p::selection {
+  color: plum;
+  background: azure;
+}</pre></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec sapien eu felis tempus ultricies. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, metus at ultrices sollicitudin, elit leo vehicula erat, sit amet pellentesque justo sapien eu ligula. Aenean in tortor at est cursus ultricies convallis lobortis purus.</p>
+  </body>
+</html>

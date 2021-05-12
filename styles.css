@@ -1,0 +1,79 @@
+/* styles for html css cheatsheet project by simone waring */
+/* page layout styles */
+html {background-color: whitesmoke;}
+
+body {
+background-color: white;
+font-family: Verdana;
+padding: 1em 4em;
+}
+
+@media (max-width: 2000px) {
+  body {
+  max-width: 80%;
+  margin: 1em  auto;
+ }
+}
+  
+@media (min-width: 2001px){
+  body {
+  max-width: 50%;
+  margin: 2em auto;
+ }
+}
+
+/* text styles */
+
+h1, h2 {color: darkorchid;}
+
+h1 {font-family: fantasy;}
+
+p:last-of-type {color: darkorchid;}
+
+p::selection {
+  color: plum;
+  background: azure;
+}
+
+code {font-size: 1.25em;}
+
+/* table styles */
+
+table {border: 1px solid darkorchid;}
+
+@media (min-width: 0px) and (max-width: 1090px) {
+  table {width: 100%;}
+}
+
+@media (min-width: 1091px) and (max-width: 2024px) {
+  table {width: 90%;}
+}
+  
+tr:nth-child(even) {
+  background-color: rgba(220, 220, 220, 0.2);
+}
+
+th, td {
+  padding-left: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: plum;
+  color: white;
+  padding: 20px;
+}
+
+.samples td:first-child {background-color: yellow;}
+
+.samples td::first-letter {color: darkorchid;}
+
+
+/* anchor styles */
+
+a {display:block;text-align: center;}
+
+a:link {color: plum;}
+a:visited {color: deepskyblue;}
+a:hover {color: orchid;}
+a:active {color: skyblue;}
